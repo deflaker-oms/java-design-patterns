@@ -11,6 +11,7 @@ env:
 before_install:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
+- unset TRAVIS
 - unset _JAVA_OPTIONS
 - wget http://www.deflaker.org/maven/apache-maven-3.3.9.zip
 - unzip -qq apache-maven-3.3.9.zip
